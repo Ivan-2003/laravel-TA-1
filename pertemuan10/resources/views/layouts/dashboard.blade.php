@@ -96,7 +96,7 @@
     <a href="index3.html" class="brand-link" style="text-align: center">
       {{-- <img src="{{ url('/dashboard/dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8"> --}}
-      <span class="brand-text font-weight-light">ADMIN CELENG</span>
+      <span class="brand-text font-weight-light">ADMIN</span>
     </a>
 
       <!-- Sidebar Menu -->
@@ -147,7 +147,7 @@
   </aside>
 
   <div class="container" style="text-align: center; padding: 8rem;">
-      <h1 style="font-size:100px;color:black;">WELCOME SUUUU..!!</h1>
+      <h1 style="font-size:100px;color:black;">WELCOME</h1>
       {{-- <h1 style="font-size:70px;color:black;">DI</h1>
       <h1 style="font-size:70px;color:black;">PT. MAJU MUNDUR</h1> --}}
   </div>
