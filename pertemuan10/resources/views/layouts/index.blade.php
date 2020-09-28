@@ -26,7 +26,8 @@
   <link rel="stylesheet" href="{{ asset("/dashboard/plugins/summernote/summernote-bs4.css")}}">
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.22/css/jquery.dataTables.css">
 </head>
 <body class="hold-transition sidebar-mini layout-fixed">
 <div class="wrapper">
@@ -58,7 +59,7 @@
       </div>
     </form>
 
-    <!-- Right navbar links -->
+    {{-- <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
       <!-- Messages Dropdown Menu -->
       <li class="nav-item dropdown">
@@ -149,9 +150,9 @@
         <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
           <i class="fas fa-th-large"></i>
         </a>
-      </li>
-    </ul>
-  </nav>
+      </li> --}}
+    {{-- </ul>
+  </nav> --}}
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
@@ -218,7 +219,7 @@
                         Tambah Karyawan
                     </a>
                 </div>
-                <table class="table table-striped">
+                <table class="table table-striped" id="table_id">
                     <thead>
                         <tr>
                           {{-- <th>ID</th> --}}
@@ -327,5 +328,11 @@
     <!-- AdminLTE for demo purposes -->
     <script src="{{ asset('/dashboard/dist/js/demo.js')}}"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.js"></script>
+    <script>
+      $(document).ready( function () {
+    $('#table_id').DataTable();
+    } );
+    </script>
     </body>
     </html>
